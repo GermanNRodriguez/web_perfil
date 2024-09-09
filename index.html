@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta   
+            http-equiv="Content-Security-Policy" 
+            content="   default-src 'self'; 
+                        script-src * 'unsafe-eval' 'unsafe-inline' 'self'; 
+                        connect-src 'self' * blob: 'unsafe-inline' 'unsafe-eval'; 
+                        style-src 'self' 'unsafe-inline'; 
+                        img-src 'self' 'unsafe-eval'  'unsafe-inline' blob: data: ;
+                        frame-src 'self';
+                        font-src 'self';
+                        media-src * 'self' data:;"
+        >
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <meta name="description" content="Esto es una prueba para Dealshop">
+        <meta name="format-detection" content="telephone=yes">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+        <!-- Social Tags -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/vnd.icon" href="./assets/img/favicon/favicon.ico">
+
+        <!-- Css configuracion general del sitio -->
+        <link rel='stylesheet' async type="text/css" href='assets/css/index.css'>
+        <link rel='stylesheet' async type="text/css" href='assets//css/plugins/bootstrap.min.css'>
+
+    </head>
+    <body>
+
+        <ul class="nav" id="main_nav">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#main_carrousel">Fotos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#main_perfil">Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#main_contacto">Contacto</a>
+            </li>
+        </ul>
+
+        <main id="index_main" >
+            <section id="main_carrousel" class="main-section">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/img/carrousel_home/uno.jpg" class="d-block w-100" alt="Uno">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/img/carrousel_home/dos.jpg" class="d-block w-100" alt="Dos">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/img/carrousel_home/tres.jpg" class="d-block w-100" alt="Tres">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Prev</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <section id="main_perfil" class="main-section">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/perfil/perfil_main.png" class="card-img-top" alt="perfil">
+                    <div class="card-body">
+                      <h5 class="card-title">Germ&aacute;n Rodr&iacute;guez</h5>
+                      <p class="card-text">Me enfoco en lograr la excelencia t&eacute;cnica y atenci&oacute;n al detalle en cada proyecto, con una mentalidad centrada en el cliente. Mi objetivo es comprender las necesidades individuales de cada cliente para ofrecer soluciones que superen sus expectativas.</p>
+                      <a href="#formulario_cilsa" class="btn btn-primary">Contáctame</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="main_contacto" class="main-section">
+                <form id="formulario_cilsa" action="javascript:void(0);">
+                    <div class="container">
+
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col-12">
+                                    <div class="content-img">
+                                        <figure>
+                                            <img async loading="lazy" src="./assets/img/icons/user.png" alt="usuario">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-1">
+                            <div class="row align-items-start">
+                                <div class="col-12 col-md-6 mt-1">
+                                    <div class="input-group item-form">
+                                        <input type="text" class="form-control" id="form_nombre" name="nombre" placeholder="Nombre">
+                                        <span class="form-error">El nombre debe tener al menos 3 letras. Sin números.</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mt-1">
+                                    <div class="input-group item-form">
+                                        <input type="text" class="form-control" id="form_apellido" name="apellido" placeholder="Apellido">
+                                        <span class="form-error">El apellido debe tener al menos 3 letras. Sin números.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-start">
+                                <div class="col-12 col-md-6 mt-1">
+                                    <div class="input-group item-form">
+                                        <input type="text" class="form-control" id="form_email" name="email" placeholder="Email">
+                                        <span class="form-error">El email no corresponde a un formato existente.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container text-center mt-1">
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    <input type="submit" name="submit" class="btn btn-primary" value="registrar">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </form>
+            </section>
+
+        </main>
+
+        <script type='text/javascript' src='assets/js/index.js' async defer></script>
+        <script type='text/javascript' src='assets/js/plugins/bootstrap.min.js' async defer></script>
+
+    </body>
+</html>
