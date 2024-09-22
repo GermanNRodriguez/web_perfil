@@ -11,6 +11,7 @@ body, main
     height: 100%;
     margin: 0;
     padding: 0;
+    
 }
 
 figure
@@ -105,3 +106,5 @@ span.form-error {
     color: #ffffff;
     background-color: var(--color-secundario);
 }
+
+
